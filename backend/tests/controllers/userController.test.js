@@ -24,7 +24,7 @@ describe('User Controller', () => {
                     codePostal: '75000',
                     ville: 'Paris',
                     email: 'newuser@example.com',
-                    password: 'ValidPassword123!',
+                    password: 'ValidPassword123!'
                 });
 
             console.log(res.body);  // Affiche le corps de la réponse pour déboguer

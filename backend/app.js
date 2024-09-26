@@ -11,6 +11,7 @@ const userRoutes = require('./routes/userRoutes');
 const serviceRoutes = require('./routes/serviceRoutes');
 const reservationRoutes = require('./routes/reservationRoutes');
 const adminUserRoutes = require('./routes/adminUserRoutes');
+const weatherRoutes = require('./routes/weatherRoutes');
 
 const app = express();
 
@@ -56,5 +57,6 @@ app.use('/api/users', userRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/reservations', reservationRoutes);
 app.use('/api/admin/users', adminUserRoutes);
+app.use('/api', weatherRoutes);
 
 module.exports = app;
